@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8332E6DB28C77B64002C3CC8 /* CustomLoggingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332E6DA28C77B64002C3CC8 /* CustomLoggingButton.swift */; };
+		8332E6DD28C77E67002C3CC8 /* CustomLoggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8332E6DC28C77E67002C3CC8 /* CustomLoggingViewController.swift */; };
+		8332E6DF28C77E9F002C3CC8 /* CustomLoggingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8332E6DE28C77E9E002C3CC8 /* CustomLoggingViewController.storyboard */; };
 		834305FE28C24AFC0005F190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834305FD28C24AFC0005F190 /* AppDelegate.swift */; };
 		8343060028C24AFC0005F190 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834305FF28C24AFC0005F190 /* SceneDelegate.swift */; };
 		8343060228C24AFC0005F190 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343060128C24AFC0005F190 /* MainViewController.swift */; };
@@ -20,6 +23,7 @@
 		8343063128C24F730005F190 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8343063028C24F730005F190 /* MainCollectionViewCell.swift */; };
 		8372079828C254860019E61E /* PresentingStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8372079728C254860019E61E /* PresentingStyle.swift */; };
 		8383D24328C32D260020127A /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383D24228C32D260020127A /* CustomViewController.swift */; };
+		8388237228C7822700219584 /* CustomLoggingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8388237128C7822700219584 /* CustomLoggingDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8332E6DA28C77B64002C3CC8 /* CustomLoggingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoggingButton.swift; sourceTree = "<group>"; };
+		8332E6DC28C77E67002C3CC8 /* CustomLoggingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoggingViewController.swift; sourceTree = "<group>"; };
+		8332E6DE28C77E9E002C3CC8 /* CustomLoggingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomLoggingViewController.storyboard; sourceTree = "<group>"; };
 		834305FA28C24AFC0005F190 /* CustomViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834305FD28C24AFC0005F190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		834305FF28C24AFC0005F190 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +64,7 @@
 		8343063028C24F730005F190 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		8372079728C254860019E61E /* PresentingStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentingStyle.swift; sourceTree = "<group>"; };
 		8383D24228C32D260020127A /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		8388237128C7822700219584 /* CustomLoggingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoggingDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8332E6D928C77B4A002C3CC8 /* CustomViewComponentsForLogging */ = {
+			isa = PBXGroup;
+			children = (
+				8332E6DC28C77E67002C3CC8 /* CustomLoggingViewController.swift */,
+				8332E6DE28C77E9E002C3CC8 /* CustomLoggingViewController.storyboard */,
+				8332E6DA28C77B64002C3CC8 /* CustomLoggingButton.swift */,
+			);
+			path = CustomViewComponentsForLogging;
+			sourceTree = "<group>";
+		};
 		834305F128C24AFC0005F190 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +129,8 @@
 				834305FF28C24AFC0005F190 /* SceneDelegate.swift */,
 				8372079728C254860019E61E /* PresentingStyle.swift */,
 				8383D24228C32D260020127A /* CustomViewController.swift */,
+				8388237128C7822700219584 /* CustomLoggingDelegate.swift */,
+				8332E6D928C77B4A002C3CC8 /* CustomViewComponentsForLogging */,
 				8343062D28C24F410005F190 /* Main */,
 				8343060628C24AFD0005F190 /* Assets.xcassets */,
 				8343060828C24AFD0005F190 /* LaunchScreen.storyboard */,
@@ -251,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8332E6DF28C77E9F002C3CC8 /* CustomLoggingViewController.storyboard in Resources */,
 				8343060A28C24AFD0005F190 /* LaunchScreen.storyboard in Resources */,
 				8343060728C24AFD0005F190 /* Assets.xcassets in Resources */,
 				8343060528C24AFC0005F190 /* Main.storyboard in Resources */,
@@ -283,8 +304,11 @@
 				8383D24328C32D260020127A /* CustomViewController.swift in Sources */,
 				8343060228C24AFC0005F190 /* MainViewController.swift in Sources */,
 				834305FE28C24AFC0005F190 /* AppDelegate.swift in Sources */,
+				8332E6DB28C77B64002C3CC8 /* CustomLoggingButton.swift in Sources */,
 				8343060028C24AFC0005F190 /* SceneDelegate.swift in Sources */,
 				8343063128C24F730005F190 /* MainCollectionViewCell.swift in Sources */,
+				8332E6DD28C77E67002C3CC8 /* CustomLoggingViewController.swift in Sources */,
+				8388237228C7822700219584 /* CustomLoggingDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

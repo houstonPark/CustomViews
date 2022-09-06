@@ -7,12 +7,15 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
-
+class MainViewController: CustomViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     private var collectionViewItem: [CustomViewController.Type] = []
+    
+    override var screenName: String {
+        "Main Screen"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,7 @@ class MainViewController: UIViewController {
     
     private func setDataSource() {
         collectionViewItem = [
+            CustomLoggingViewController.self
         ]
     }
 }
@@ -37,16 +41,8 @@ extension MainViewController: UICollectionViewDelegate {
         let viewControllerType = collectionViewItem[indexPath.item]
         
         let viewController = viewControllerType.create(viewControllerType: viewControllerType.self)
-        
-        switch viewController.presentingStyle {
-        case .navigationPush:
-            navigationController?.pushViewController(viewController, animated: true)
-        case .presentModal:
-            present(viewController, animated: true)
-        case .presentFullScreen:
-            viewController.modalPresentationStyle = .fullScreen
-            present(viewController, animated: true)
-        }
+
+        self.showViewController(targetViewController: viewController)
     }
 }
 
